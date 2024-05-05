@@ -44,6 +44,8 @@ The available tutorials are also provided as annotated Jupyter notebooks below.
 
 [Tutorial 2:Analysis of Spatial Data,Pathway Visualization and Parameter sensitivity](https://github.com/cliffzhou92/STT/blob/release/example_notebooks/example-mouse_brain-spatial.ipynb)
 
+[Tutorial 3:Analysis of Chicken Heart Spatial Data, Dynamical Manifold and Transition Path Inference](https://github.com/cliffzhou92/STT/blob/release/example_notebooks/example-chicken_heart.ipynb)
+
 
 ## Example Notebooks
 **System** | **Data Source** | **Notebook File**
