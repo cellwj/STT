@@ -1,3 +1,37 @@
+## 部署
+
+- ❌ Windows
+- ✅ Ubuntu
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install petsc-dev
+conda create -n stt python==3.7.6
+conda activate stt
+pip install -r requirements.txt
+```
+## 复现
+
+`./example_notebooks`：
+
+| 文件名                            | 是否运行成功 | 是否缺少数据 | 备注                     |
+|----------------------------------|--------------|--------------|--------------------------|
+| example-bone-marrow.ipynb        |              |              |                          |
+| example-bone_marrow.ipynb        |              |              |                          |
+| example-chicken_heart.ipynb      |              |              |                          |
+| example-drosophila.ipynb         |              |              |                          |
+| example-emt.ipynb                |              |              |                          |
+| example-mouse_brain-spatial.ipynb|              |              |                          |
+| example-mouse_brain_bin.ipynb    |              |              |                          |
+| example-mouse_eryth.ipynb        |              |              |                          |
+| example-pancreas.ipynb           |              |              |                          |
+| example_emt_circuit.ipynb        |              |              |                          |
+| example_toggle.ipynb             |              |              |                          |
+| networks.py                      |              |              |                          |
+| sctt.py                          |              |              |                          |
+| toggle_benchmark.csv             |              |              |                          |
+| toggle_benchmark.ipynb           |              |              |                          |
+| toggle_results.h5ad              |              |              |                          |
+
 # STT
 
 ## Introduction
