@@ -26,11 +26,7 @@ pip install -r requirements.txt
 | example-pancreas.ipynb           |              |              |                          |
 | example_emt_circuit.ipynb        |              |              |                          |
 | example_toggle.ipynb             |              |              |                          |
-| networks.py                      |              |              |                          |
-| sctt.py                          |              |              |                          |
-| toggle_benchmark.csv             |              |              |                          |
 | toggle_benchmark.ipynb           |              |              |                          |
-| toggle_results.h5ad              |              |              |                          |
 
 # STT
 
