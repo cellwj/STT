@@ -1,4 +1,4 @@
-## 部署
+# 部署
 
 - ❌ Windows
 - ✅ Ubuntu
@@ -9,25 +9,26 @@ conda create -n stt python==3.7.6
 conda activate stt
 pip install -r requirements.txt
 ```
-## 复现
+# 复现
 
 `./example_notebooks`：
 
-| 文件名                            | 是否运行成功 | 是否缺少数据 | 备注                     |
-|----------------------------------|--------------|--------------|--------------------------|
-| example-bone-marrow.ipynb        |              |              |                          |
-| example-bone_marrow.ipynb        |              |              |                          |
-| example-chicken_heart.ipynb      |              |              |                          |
-| example-drosophila.ipynb         |              |              |                          |
-| example-emt.ipynb                |              |              |                          |
-| example-mouse_brain-spatial.ipynb|              |              |                          |
-| example-mouse_brain_bin.ipynb    |              |              |                          |
-| example-mouse_eryth.ipynb        |              |              |                          |
-| example-pancreas.ipynb           |              |              |                          |
-| example_emt_circuit.ipynb        |              |              |                          |
-| example_toggle.ipynb             |              |              |                          |
-| toggle_benchmark.ipynb           |              |              |                          |
+| 文件名                            | 跑通 | 备注                     |
+|----------------------------------|--------------|------------------------|
+| example_emt_circuit.ipynb        |       ✅       |                           |
+| example_toggle.ipynb             |     ❌         |  FileNotFoundError: `data/results_celldancer.h5ad`  `data/results_unit.h5ad`                       |
+| example-bone_marrow.ipynb        |      ❌        |  BaseException: Could not construct partition: Weight vector not the same size as the number of edges.                   |
+| example-bone-marrow.ipynb        |     ❌       |  KeyError: "Could not find 'trans_coord' or 'X_trans_coord' in .obsm"                       |
+| example-chicken_heart.ipynb      |      ❌        | FileNotFoundError `data/ch_results.h5ad`           |
+| example-drosophila.ipynb         |      ❌        |      FileNotFoundError `data/E8-10_b_S21.h5ad`                 |
+| example-emt.ipynb                |      ❌        |  BaseException: Could not construct partition: Weight vector not the same size as the number of edges.                       |
+| example-mouse_brain_bin.ipynb    |              |                          |
+| example-mouse_brain-spatial.ipynb|              |                        |
+| example-mouse_eryth.ipynb        |              |                         |
+| example-pancreas.ipynb           |              |                            |
+| toggle_benchmark.ipynb           |              |                           |
 
+---
 # STT
 
 ## Introduction
