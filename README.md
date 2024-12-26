@@ -17,16 +17,16 @@ pip install -r requirements.txt
 |----------------------------------|--------------|------------------------|
 | example_emt_circuit.ipynb        |       ✅       |                           |
 | example_toggle.ipynb             |     ❌         |  FileNotFoundError: `data/results_celldancer.h5ad`  `data/results_unit.h5ad`                       |
-| example-bone_marrow.ipynb        |      ❌        |  BaseException: Could not construct partition: Weight vector not the same size as the number of edges.                   |
+| example-bone_marrow.ipynb        |      ❌        |   PETSC ERROR `st.dynamical_iteration`        |
 | example-bone-marrow.ipynb        |     ❌       |  KeyError: "Could not find 'trans_coord' or 'X_trans_coord' in .obsm"                       |
 | example-chicken_heart.ipynb      |      ❌        | FileNotFoundError `data/ch_results.h5ad`           |
-| example-drosophila.ipynb         |      ❌        |      FileNotFoundError `data/E8-10_b_S21.h5ad`                 |
-| example-emt.ipynb                |      ❌        |  BaseException: Could not construct partition: Weight vector not the same size as the number of edges.                       |
-| example-mouse_brain_bin.ipynb    |              |                          |
-| example-mouse_brain-spatial.ipynb|              |                        |
-| example-mouse_eryth.ipynb        |              |                         |
-| example-pancreas.ipynb           |              |                            |
-| toggle_benchmark.ipynb           |              |                           |
+| example-drosophila.ipynb         |      ❌        |   FileNotFoundError `data/E8-10_b_S21.h5ad`                 |
+| example-emt.ipynb                |      ❌        |   KeyError: 'Could not find key time in .var_names or .obs.columns.'  |
+| example-mouse_brain_bin.ipynb    |      ❌        | PETSC ERROR `st.tl.compute_pathway`  |
+| example-mouse_brain-spatial.ipynb|      ❌        |  PETSC ERROR `st.tl.compute_pathway`     |
+| example-mouse_eryth.ipynb        |    ❌          |   PETSC ERROR `st.dynamical_iteration`     |
+| example-pancreas.ipynb           |     ❌         |  PETSC ERROR `st.pl.plot_tensor`-`scv.tl.velocity_graph` |
+| toggle_benchmark.ipynb           |     ❌         |   ValueError: Some elements of chi are significantly negative: < -2.220446049250313e-15.                        |
 
 ---
 # STT
