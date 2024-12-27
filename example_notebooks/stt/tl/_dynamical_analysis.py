@@ -373,5 +373,7 @@ def dynamical_iteration(adata, n_states=None, n_states_seq=None, n_iter=10, retu
         sc_object_aggr.obs['entropy'] = adata.obs['entropy'].values
         sc_object_aggr.obs['speed'] = adata.obs['speed'].values
         sc_object_aggr.obs['attractor'] = adata.obs['attractor'].values
+        if 'time' in adata.obs.columns:
+            sc_object_aggr.obs['time'] = adata.obs['time'].values
         return sc_object_aggr
     

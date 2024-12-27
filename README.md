@@ -9,6 +9,7 @@ conda create -n stt python==3.7.6
 conda activate stt
 pip install -r requirements.txt
 ```
+
 # 复现
 
 `./example_notebooks`：
@@ -17,16 +18,20 @@ pip install -r requirements.txt
 |----------------------------------|--------------|------------------------|
 | example_emt_circuit.ipynb        |       ✅       |                           |
 | example_toggle.ipynb             |     ❌         |  FileNotFoundError: `data/results_celldancer.h5ad`  `data/results_unit.h5ad`                       |
-| example-bone_marrow.ipynb        |      ❌        |   PETSC ERROR `st.dynamical_iteration`        |
-| example-bone-marrow.ipynb        |     ❌       |  KeyError: "Could not find 'trans_coord' or 'X_trans_coord' in .obsm"                       |
+| example-bone_marrow.ipynb        |      ✅        |    |
+| example-bone-marrow.ipynb        |    ❌       | 内存不足 |
 | example-chicken_heart.ipynb      |      ❌        | FileNotFoundError `data/ch_results.h5ad`           |
 | example-drosophila.ipynb         |      ❌        |   FileNotFoundError `data/E8-10_b_S21.h5ad`                 |
-| example-emt.ipynb                |      ❌        |   KeyError: 'Could not find key time in .var_names or .obs.columns.'  |
-| example-mouse_brain_bin.ipynb    |      ❌        | PETSC ERROR `st.tl.compute_pathway`  |
-| example-mouse_brain-spatial.ipynb|      ❌        |  PETSC ERROR `st.tl.compute_pathway`     |
-| example-mouse_eryth.ipynb        |    ❌          |   PETSC ERROR `st.dynamical_iteration`     |
-| example-pancreas.ipynb           |     ❌         |  PETSC ERROR `st.pl.plot_tensor`-`scv.tl.velocity_graph` |
-| toggle_benchmark.ipynb           |     ❌         |   ValueError: Some elements of chi are significantly negative: < -2.220446049250313e-15.                        |
+| example-emt.ipynb                |      ❌        |   内存不足  |
+| example-mouse_brain_bin.ipynb    |      ❌        | 内存不足  |
+| example-mouse_brain-spatial.ipynb|       ✅        |   |
+| example-mouse_eryth.ipynb        |     ✅          |    |
+| example-pancreas.ipynb           |     ✅         |    |
+| toggle_benchmark.ipynb           |     ✅         |    |
+
+*注1：代码调用 `st.tl.compute_pathway` 和 `st.dynamical_iteration` 时会出现“PETSC ERROR”，不会影响代码执行，忽略即可。*
+
+*注2：每个文件的运行时长均在四十分钟左右。*
 
 ---
 # STT
