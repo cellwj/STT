@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 # 复现
 
-`./example_notebooks`：
+## `./example_notebooks/`
 
 | 文件名                            | 跑通 | 备注                     |
 |----------------------------------|--------------|------------------------|
@@ -32,6 +32,21 @@ pip install -r requirements.txt
 *注1：代码调用 `st.tl.compute_pathway` 和 `st.dynamical_iteration` 时会出现“PETSC ERROR”，不会影响代码执行，忽略即可。*
 
 *注2：每个文件的运行时长均在四十分钟左右。*
+
+## `./example_notebooks/comparison/`
+
+| 文件名                          | 跑通 | 备注           |
+|---------------------------------|------|----------------|
+| celldancer-emt-a549.ipynb       | ❌   | FileNotFoundError `../../data/A549_TGFB1.h5ad` |
+| celldancer-emt.ipynb            | ✅   |             |
+| celldancer-mouse-brain.ipynb    | ✅   |             |
+| celldancer-toggle.ipynb         | ✅   |             |
+| dynamo-emt.ipynb                | ✅   |             |
+| dynamo-toggle.ipynb             | ✅   |             |
+| unitevelo-a549.ipynb            |    |             |
+| unitevelo-emt.ipynb             |    |             |
+| unitevelo-mouse-brain.ipynb     |    |             |
+| unitevelo-toggle.ipynb          |    |             |
 
 ---
 # STT
